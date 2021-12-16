@@ -16,13 +16,12 @@ class CreateNenisTable extends Migration
         Schema::create('nenis', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('main_activity');
             $table->date('neni_day');
 
-
-            $table->unsignedBigInteger('chem_type_id');
-            $table->foreign('chem_type_id')->references('id')->on('chems_types');
+            $table->unsignedBigInteger('chems_type_id');
+            $table->foreign('chems_type_id')->references('id')->on('chems_types');
         });
     }
 
