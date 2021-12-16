@@ -6,20 +6,23 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
 
 class NeniCollection extends ResourceCollection
 {
-    /**
-     * Transform the resource collection into an array.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
-     */
-    public function toArray($request)
+
+    public function toArray($request): array
     {
         return [
             'Las nenis de chemaaaaa' => $this->collection,
-            'ex nenis' => ['La ets de run run' => [
-                'Razon de salida' => 'dejo al run run',
-                'maflai pq pto' => 'pq pto'
-            ]]
+            'ex nenis' => [
+                'La ets de run run' => [
+                    'Razon de salida' => 'dejo al run run',
+                ],
+                'maflais' => [
+                    'Razon de salida' => 'pq pto'
+                ],
+            ],
+            'proximas nenis' => [
+                'gabys' => ['razon de ser neni' => 'pq me gustasiquesi'],
+                'joce' => ['razon de ser neni' => 'pq nos trai el chismecito'],
+            ]
         ];
     }
 }
