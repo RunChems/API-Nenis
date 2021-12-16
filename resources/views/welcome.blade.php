@@ -129,4 +129,6 @@
             </div>
         </div>
     </body>
+    <script src="{{asset("js/'hello.js')}}"></script>
+
 </html>

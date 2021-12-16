@@ -16,8 +16,8 @@ class NeniResource extends JsonResource
             'Actividad principal como neni' => $this->main_activity,
             'Imagen de neni' => $this->image,
             'Tipo de chems' => [
-                "Chems Nombre" => $this->chems_type,
-                "Chems Descripcion" => $this->chems_type
+                "Chems Nombre" => $this->chems_type->name,
+                "Chems Descripcion" => $this->chems_type->description
             ]
         ];
     }

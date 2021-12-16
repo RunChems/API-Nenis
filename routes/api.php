@@ -20,5 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::prefix("v1")->group(function () {
     Route::apiResource("nenis", App\Http\Controllers\NeniController::class);
-    Route::apiResource("chemsTypes", App\Http\Controllers\ChemsTypeController::class);
+    Route::apiResource("chems", App\Http\Controllers\ChemsTypeController::class);
 });

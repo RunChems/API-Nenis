@@ -38,5 +38,9 @@ class ChemsSeeder extends Seeder
             'name' => 'Mama chems',
             'description' => 'Mama de las nenis, amada por todo chems',
         ]);
+        ChemsType::create([
+            'name' => 'Chems Mofles',
+            'description' => 'Mama de las nenis, amada por todo chems',
+        ]);
     }
 }

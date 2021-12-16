@@ -56,5 +56,12 @@ class NeniSeeder extends Seeder
             'neni_day' => '2021-12-10',
             'chems_type_id' => 6
         ]);
+        Neni::create([
+            'name' => 'Yibram',
+            'image' => 'yibram.png',
+            'main_activity' => 'Get Bully',
+            'neni_day' => '2021-12-10',
+            'chems_type_id' => 7
+        ]);
     }
 }

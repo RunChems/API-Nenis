@@ -12,12 +12,13 @@ class Neni extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
     protected $table = 'nenis';
     public $timestamps = false;
     protected $fillable = ['name'
         , 'image',
         'main_activity',
-        'neni_day'
+        'neni_day', 'chems_type_id'
     ];
 
 
