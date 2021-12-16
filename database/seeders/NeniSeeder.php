@@ -21,12 +21,12 @@ class NeniSeeder extends Seeder
             'neni_day' => '2020-10-10',
             'chems_type_id' => 1
         ]);
-        Neni::create([
-            'name' => 'Chems Lomito',
-            'image' => 'lomito.png',
-            'main_activity' => 'Llevar a las nenis al lomimpo',
-            'neni_day' => '2020-10-10',
-            'chems_type_id' => 2
-        ]);
+//        Neni::create([
+//            'name' => 'Chems Lomito',
+//            'image' => 'lomito.png',
+//            'main_activity' => 'Llevar a las nenis al lomimpo',
+//            'neni_day' => '2020-10-10',
+//            'chems_type_id' => 2
+//        ]);
     }
 }
