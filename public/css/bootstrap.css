@@ -4,7 +4,12 @@
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ 
+
  */@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Outfit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Outfit:wght@200&family=Press+Start+2P&display=swap');
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11260,15 +11265,37 @@ textarea.form-control-lg {
   }
 }
 
+.titleneni{
+  font-family: 'Press Start 2P', cursive;
+}
+
 .card-neni{
-  border-radius: 30px;
-  background: rgba( 255, 255, 255, 0.2 );
-box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
-backdrop-filter: blur( 1.5px );
--webkit-backdrop-filter: blur( 1.5px );
+  /* border-radius: 40px; */
+  background: rgba( 129, 23, 188, 0.55 );
+
+box-shadow: 0 8px 32px 0 rgba( 204, 17, 220, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 30px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 min-width: 250;
+padding: 10px;
 color: white;
+margin: 10px;
 /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
+.card-neni img {
+  /* border-radius: 20px; */
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+
+}
+
+.nameneni{
+  font-weight: bold;
+  font-size: 25px;
 }
 .contPicture{
   padding: 10px;

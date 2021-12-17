@@ -16,30 +16,24 @@ fetchApi().then(
 
         for (let i = 0; i < data['data']["Las nenis de chemaaaaa"].length; i++) {
             const name = data.data["Las nenis de chemaaaaa"][i]["Neni Nombre"];
-            const img = data.data["Las nenis de chemaaaaa"][i]["Imagen de neni"];
+            // const img = data.data["Las nenis de chemaaaaa"][i]["Imagen de neni"];
             const description = data. data["Las nenis de chemaaaaa"][i]["Tipo de chems"]["Chems Descripcion"];
-            const mainActivity = data.data["Las nenis de chemaaaaa"][0]["Actividad principal como neni"]
-
-
+            const mainActivity = data.data["Las nenis de chemaaaaa"][i]["Actividad principal como neni"]
+            // const img = "https://scontent.fpbc1-1.fna.fbcdn.net/v/t39.30808-6/257417710_652361225772144_3894784096839103111_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFDawDKCJBFFvPOFubRq0rQDXYGxMLsKAUNdgbEwuwoBXbJycWM2DP14I2TNK0huzZmxXWHsaeqoFPrP6DyMwlw&_nc_ohc=kP8w9pqf7PwAX8GYDgC&_nc_ht=scontent.fpbc1-1.fna&oh=00_AT_YnpU4FAEsiAfJ9qRIVJKDKlZGYXfumcWMPWy1c2iIlQ&oe=61BF4E4Dhttps://scontent.fpbc1-1.fna.fbcdn.net/v/t39.30808-6/257417710_652361225772144_3894784096839103111_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFDawDKCJBFFvPOFubRq0rQDXYGxMLsKAUNdgbEwuwoBXbJycWM2DP14I2TNK0huzZmxXWHsaeqoFPrP6DyMwlw&_nc_ohc=kP8w9pqf7PwAX8GYDgC&_nc_ht=scontent.fpbc1-1.fna&oh=00_AT_YnpU4FAEsiAfJ9qRIVJKDKlZGYXfumcWMPWy1c2iIlQ&oe=61BF4E4D";
+            const img = "https://i.imgur.com/cTGJVIX.jpg"
            
                 
             htmlContent += `
-                <div class= " col-sm-6  d-flex justify-content-center ">
-                    <div class=" card card-neni col-6 mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4 contPicture">
-                        <img src="${img}" class="img-fluid picNeni rounded-end" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">${name}</h5>
-                          <p class="card-text">Descripcion: <br> ${description}</p>
-                          <p class="card-text"> Actividad principal:<br> ${mainActivity}</p>
-                         
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class= "col  d-flex justify-content-center ">
+                <div class="card card-neni" style="width: 18rem;">
+                <img src="${img}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text  nameneni">${name}</p>
+                  <p class="card-text">${description}</p>
+                  <p class="card-text">${mainActivity}</p>
+                  
+                </div>
+              </div>
                  </div> 
                     `
 

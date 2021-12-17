@@ -19,25 +19,12 @@
     </a>
   </nav>
 
-<h1 class="mb-4 justify-content-center" style="text-align: center; color: white;">NENIS</h1>
+<h1 class="my-4  titleneni justify-content-center" style="text-align: center; color: white;">NENIS</h1>
 
  <div class="container w-100 justify-content-center align -items-center  mt-4" >
    <div class="row justify-content-center align-items-center content">
       
 
-        <div class="card card-neni col-sm mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4 contPicture">
-                <img src="{{asset('images/ricardo.jpg')}}" class="img-fluid picNeni rounded-end" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                 
-              </div>
-            </div>
-          </div>
           
 
           
